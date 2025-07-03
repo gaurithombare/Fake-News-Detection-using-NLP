@@ -51,41 +51,17 @@ Each model was evaluated using accuracy and confusion matrix. The best-performin
 
 ## 🚀 Project Structure
 
-<pre> ``` Fake-News-Detection/ │ ├── app/ │ ├── fake_news_model.pkl ✅ Pickled ML model │ └── vectorizer.pkl ✅ TF-IDF vectorizer │ ├── dataset/ │ └── final_balanced_dataset.csv ✅ Clean, final dataset │ ├── Fake_News_Detection.ipynb ✅ Full Jupyter Notebook with EDA, preprocessing, modeling ├── app.py ✅ Streamlit app code ├── requirements.txt ✅ List of required libraries └── README.md ✅ Project description and instructions ``` </pre>
 
-
-
-Fake-News-Detection/
-│
-├── app/
-│   ├── fake_news_model.pkl        ✅ Pickled ML model
-│   └── vectorizer.pkl             ✅ TF-IDF vectorizer
-│
-├── dataset/
-│   └── final_balanced_dataset.csv ✅ Clean, final dataset
-│
-├── Fake_News_Detection.ipynb       ✅ Full Jupyter Notebook with EDA, preprocessing, modeling
-├── app.py                          ✅ Streamlit app code
-├── requirements.txt                ✅ List of required libraries (use `pip freeze > requirements.txt`)
-└── README.md                       ✅ Project description and instructions
-
-
-
-```
-Fake-News-Detection/
-│
-├── app/
-│   ├── fake_news_model.pkl
-│   └── vectorizer.pkl
-│
-├── dataset/
-│   └── final_balanced_dataset.csv
-│
-├── Fake_News_Detection.ipynb       # Full Jupyter Notebook (Exploration, Preprocessing, Modeling)
-├── app.py                          # Streamlit frontend for model inference
-├── requirements.txt
-└── README.md
-```
+Folder/File	Description	✅ Status
+app/	Folder to hold model and vectorizer files	✅ Created
+├── fake_news_model.pkl	Pickled machine learning model	✅ Done
+└── vectorizer.pkl	TF-IDF vectorizer used for transforming text	✅ Done
+dataset/	Folder to hold the final cleaned dataset	✅ Created
+└── final_balanced_dataset.csv	Cleaned and balanced dataset (Real + Fake News)	✅ Done
+Fake_News_Detection.ipynb	Full Jupyter Notebook: EDA, preprocessing, modeling	✅ Done
+app.py	Streamlit app script for frontend prediction	✅ Done
+requirements.txt	List of required libraries	✅ Done
+README.md	Project description, structure, and usage guide	✅ Done
 
 ## 🌐 Streamlit Web App
 
