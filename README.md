@@ -51,3 +51,33 @@ Each model was evaluated using accuracy and confusion matrix. The best-performin
 
 ## 🚀 Project Structure
 
+Fake-News-Detection/
+│
+├── app/
+│ ├── fake_news_model.pkl
+│ ├── vectorizer.pkl
+│
+├── dataset/
+│ ├── final_balanced_dataset.csv
+│
+├── Fake_News_Detection.ipynb # Full Jupyter Notebook (Exploration, Preprocessing, Modeling)
+├── app.py # Streamlit frontend for model inference
+├── requirements.txt
+└── README.md
+
+
+
+
+
+## 🌐 Streamlit Web App
+
+A simple and interactive **Streamlit app** allows users to input any news content and check whether it is **FAKE** or **REAL**, along with confidence scores.
+
+## 📦 How to Run
+
+1. Clone the repo  
+```bash
+git clone https://github.com/gaurithombare/Fake-News-Detection.git
+cd Fake-News-Detection
+
+
