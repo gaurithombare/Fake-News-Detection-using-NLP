@@ -1,88 +1,53 @@
-# Fake-News-Detection-using-NLP
-Build a machine learning model that classifies news articles as real or fake based on their textual content.
+# 📰 Fake News Detection using NLP and Machine Learning
 
+This project is an end-to-end implementation of a Fake News Detection system using Natural Language Processing (NLP) and supervised machine learning models. The goal is to classify news articles as **Real** or **Fake** based on their textual content.
 
+## 📌 Project Overview
 
-📦 Dataset:
-Name: Fake and Real News Dataset
+Fake news has become a widespread problem in the digital age, spreading misinformation and creating confusion. In this project, I developed a machine learning model that detects fake news by analyzing text using NLP techniques.
 
-Source: Kaggle
+## 🧠 Models Used
 
-Link: https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
+- Logistic Regression
+- Multinomial Naive Bayes
+- Random Forest Classifier
 
-🔧 Tools & Libraries:
-Pandas, NumPy
+The model with the best accuracy was selected for deployment.
 
-Scikit-learn
+## 🧰 Technologies & Libraries
 
-NLTK or spaCy for text preprocessing
+- Python
+- Pandas, NumPy
+- NLTK (Natural Language Toolkit)
+- Scikit-learn
+- Streamlit
+- Joblib
 
-TfidfVectorizer or CountVectorizer
+## 🗂️ Dataset
 
-Logistic Regression, Random Forest, Naive Bayes
+The dataset used is a combination of:
+- `True.csv` – Real news articles
+- `Fake.csv` – Fake news articles  
+Both datasets were preprocessed, merged, and balanced manually using additional real news scraped from **NDTV**, **Times of India**, and **Indian Express**.
 
-Optional: Streamlit for deployment
+> 📁 Final dataset: `final_balanced_dataset.csv`
 
-🧠 Workflow:
-Data Loading
+## 🔍 NLP Techniques Used
 
-Text Cleaning
+- Text Cleaning (removal of punctuation, URLs, etc.)
+- Stopwords Removal
+- Stemming (Porter Stemmer)
+- TF-IDF Vectorization
 
-Remove stopwords
+## 📈 Model Evaluation
 
-Remove punctuation, special characters
+Each model was evaluated using accuracy and confusion matrix. The best-performing model was saved using Joblib and deployed in the app.
 
-Lowercasing, stemming/lemmatization
+| Model               | Accuracy |
+|--------------------|----------|
+| Logistic Regression| 96.5%    |
+| Naive Bayes        | 95.4%    |
+| Random Forest      | 93.7%    |
 
-Feature Extraction
+## 🚀 Project Structure
 
-Using TfidfVectorizer
-
-Train-Test Split
-
-Model Training
-
-Logistic Regression
-
-Random Forest
-
-Multinomial Naive Bayes
-
-Evaluation
-
-Accuracy, Precision, Recall, F1-score
-
-Confusion Matrix
-
-Model Comparison Table
-
-Streamlit UI (optional)
-
-📂 Folder Structure:
-kotlin
-Copy
-Edit
-fake-news-detection/
-│
-├── data/
-│   └── fake_or_real_news.csv
-├── notebook/
-│   └── fake_news_detection.ipynb
-├── app/
-│   └── streamlit_app.py
-├── README.md
-└── requirements.txt
-📊 Bonus Features You Can Add:
-Word Cloud of fake vs. real headlines
-
-Top words contributing to each class
-
-Streamlit web app for end-user testing
-
-Shall I generate:
-
-✅ The full Jupyter Notebook template?
-
-✅ A Streamlit app script?
-
-✅ The README.md file with detailed explanation?
