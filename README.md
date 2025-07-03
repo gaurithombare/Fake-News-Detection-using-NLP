@@ -51,6 +51,10 @@ Each model was evaluated using accuracy and confusion matrix. The best-performin
 
 ## 🚀 Project Structure
 
+<pre> ``` Fake-News-Detection/ │ ├── app/ │ ├── fake_news_model.pkl ✅ Pickled ML model │ └── vectorizer.pkl ✅ TF-IDF vectorizer │ ├── dataset/ │ └── final_balanced_dataset.csv ✅ Clean, final dataset │ ├── Fake_News_Detection.ipynb ✅ Full Jupyter Notebook with EDA, preprocessing, modeling ├── app.py ✅ Streamlit app code ├── requirements.txt ✅ List of required libraries └── README.md ✅ Project description and instructions ``` </pre>
+
+
+
 Fake-News-Detection/
 │
 ├── app/
